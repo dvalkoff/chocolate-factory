@@ -1,0 +1,13 @@
+.basket-menu-item {
+    display: none!important;
+}
+
+@media (max-width: 992px) {
+    .basket-img {
+        display: none;
+    }
+
+    .basket-menu-item {
+        display: block!important;
+    }
+}

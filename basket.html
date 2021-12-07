@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style/basket.css">
+    <link rel="stylesheet" href="src/style/navbar.css">
+    <link rel="stylesheet" href="src/style/footer.css">
+    <link rel="stylesheet" href="src/style/alerts.css">
+    <link rel="stylesheet" href="src/style/index-style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script src="src/script/basket.js"></script>
+    <script src="src/script/alerts.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+        <img src="src/resources/chocolate-svgrepo-com.svg" width="35" height="35" class="d-inline-block align-top"
+             alt="">
+        Сладкоежка
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Главная<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="catalog.html">Каталог</a>
+            <a class="nav-item nav-link" href="about-us.html">О нас</a>
+            <a class="nav-item nav-link" href="contacts.html">Контакты</a>
+            <a class="nav-item nav-link basket-menu-item" href="#">Корзина</a>
+        </div>
+    </div>
+    <a href="#" class="basket-img">
+        <img src="src/resources/basket-svgrepo-com.svg" alt="" width="35" height="35">
+    </a>
+</nav>
+
+<div class="alerts-list">
+
+</div>
+
+<section>
+    <div class="d-flex justify-content-center catalog-title">
+        <h4 class="text-uppercase">Корзина</h4>
+    </div>
+    <div class="basket">
+        <div class="basket-list">
+            <div class="basket-item">
+                <img src="https://www.shokoladki.ru/upload/resize_cache/iblock/cd3/255_170_1/cd39da94e1e68d08296caab7d96d463b.jpeg"
+                     alt="" class="item-image">
+                <span class="item-title">Шоколадная фигура Олень Санты</span>
+                <span class="item-price">450 ₽</span>
+                <div class="input-group number-spinner">
+                    <div class="input-group-btn">
+                        <button class="bg-white counter" data-dir="dwn">-</button>
+                    </div>
+                    <input type="number" class="form-control text-center" value="1">
+                    <div class="input-group-btn bg-white">
+                        <button class="bg-white counter" data-dir="up">+</button>
+                    </div>
+                </div>
+                <div class="btn-trash-can">
+                    <button type="button" class="bg-white trash-can-btn">
+                        <img src="src/resources/big-trash-can-svgrepo-com.svg" height="30px" width="30px" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="basket-item">
+                <img src="https://www.shokoladki.ru/upload/resize_cache/iblock/a34/255_170_1/a341ccc7f7a24402d2a792843d331f9c.jpeg"
+                     alt="" class="item-image">
+                <span class="item-title">Подарочная корзина "Новогодняя"</span>
+                <span class="item-price">1400 ₽</span>
+                <div class="input-group number-spinner">
+                    <div class="input-group-btn">
+                        <button class="bg-white counter" data-dir="dwn">-</button>
+                    </div>
+                    <input type="number" class="form-control text-center" value="1">
+                    <div class="input-group-btn bg-white">
+                        <button class="bg-white counter" data-dir="up">+</button>
+                    </div>
+                </div>
+                <div class="btn-trash-can">
+                    <button type="button" class="bg-white trash-can-btn">
+                        <img src="src/resources/big-trash-can-svgrepo-com.svg" height="30px" width="30px" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="basket-item">
+                <img src="https://www.shokoladki.ru/upload/resize_cache/iblock/fc0/255_170_1/fc0c8c1a9295a5dfde8abe8d2113c9be.jpeg"
+                     alt="" class="item-image">
+                <span class="item-title">Шоколадный набор "С Новым Годом"</span>
+                <span class="item-price">1275 ₽</span>
+                <div class="input-group number-spinner">
+                    <div class="input-group-btn">
+                        <button class="bg-white counter" data-dir="dwn">-</button>
+                    </div>
+                    <input type="number" class="form-control text-center" value="1">
+                    <div class="input-group-btn bg-white">
+                        <button class="bg-white counter" data-dir="up">+</button>
+                    </div>
+                </div>
+                <div class="btn-trash-can">
+                    <button type="button" class="bg-white trash-can-btn">
+                        <img src="src/resources/big-trash-can-svgrepo-com.svg" height="30px" width="30px" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="order">
+            <div class="d-flex justify-content-center catalog-title">
+                <h6 class="text-uppercase">Заказ</h6>
+            </div>
+            <div class="order-info-list">
+                <div class="order-info-item">
+                    <span>Товары (3)</span>
+                    <span id="price-of-items">3575 ₽</span>
+                </div>
+                <div class="order-info-item">
+                    <span>Скидка</span>
+                    <span>0 ₽</span>
+                </div>
+                <div class="order-info-item">
+                    <span>Доставка</span>
+                    <span>500 ₽</span>
+                </div>
+                <div class="order-info-item">
+                    <span>Итого</span>
+                    <span id="total-price">4075 ₽</span>
+                </div>
+            </div>
+            <div class="buy-order-link">
+                <a href="#!">Оформить</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-secondary text-white text-center text-md-start">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Сладкоежка</h5>
+                <p>"Сладкоежка" занимается производством и реализацией шоколадных изделий премиум-класса на любой
+                    вкус!</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Меню</h5>
+
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="index.html" class="text-white">Главная</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html" class="text-white">Каталог</a>
+                    </li>
+                    <li>
+                        <a href="about-us.html" class="text-white">О нас</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html" class="text-white">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-2">Контакты</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <img src="src/resources/instagram-svgrepo-com.svg" width="30" height="30" alt="">
+                        <a href="#!" class="text-white">Instagram</a>
+                    </li>
+                    <li>
+                        <img src="src/resources/vk-svgrepo-com.svg" width="30" height="30" alt="">
+                        <a href="#!" class="text-white">Vkontakte</a>
+                    </li>
+                    <li>
+                        <img src="src/resources/telegram-svgrepo-com.svg" width="30" height="30" alt="">
+                        <a href="#!" class="text-white"> Telegram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Все права не защищены
+    </div>
+</footer>
+</body>
+</html>

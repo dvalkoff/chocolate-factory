@@ -1,0 +1,63 @@
+.alerts-list {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: white;
+    transition: all 0.5s ease-out;
+    z-index: 100;
+}
+
+.alert-item {
+    background-color: #F39C12;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    max-width: 20rem;
+    height: 45px;
+    padding: 10px;
+    transition: all 1s ease;
+}
+
+.alert-item button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.alert-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.disappear {
+    animation: disappear 4s;
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .alerts-list {
+        width: 100%;
+    }
+
+    .alert-item {
+        margin: 10px auto;
+        width: 100%;
+    }
+}

@@ -1,0 +1,27 @@
+.about-us-list li {
+    list-style-type: none;
+    list-style-image: url("../resources/check-svgrepo-com.svg");
+    margin: 0 0 13px 0;
+}
+
+.about-us-info {
+    display: flex;
+}
+
+.title-in-info {
+    font-weight: bold;
+}
+
+.info-container {
+    margin: 30px auto;
+}
+
+.check-svg {
+    display: none;
+}
+
+.cookie-image {
+    max-width: 300px;
+    float: right;
+    margin: 10px;
+}
