@@ -49,7 +49,7 @@ $(document).on('click', '.btn-trash-can button', function () {
     document.getElementById("total-price").textContent = totalPrice + ' ₽'
 
     alertItem.className = "alert-item"
-    closeIcon.src = "../src/resources/close-svgrepo-com.svg"
+    closeIcon.src = "/chocolate-factory/src/resources/close-svgrepo-com.svg"
     closeButton.className = "btn shadow-none"
     span.appendChild(text)
     closeButton.appendChild(closeIcon)

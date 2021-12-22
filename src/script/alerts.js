@@ -6,7 +6,7 @@ $(document).on('click', '.catalog-item button', function () {
         closeIcon =document.createElement("img")
 
     alertItem.className = "alert-item"
-    closeIcon.src = "/chocolate-fabric/src/resources/close-svgrepo-com.svg"
+    closeIcon.src = "/chocolate-factory/src/resources/close-svgrepo-com.svg"
     closeButton.className = "btn shadow-none"
 
     var text;
